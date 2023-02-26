@@ -407,6 +407,7 @@ footer h2 {
   font-family: 'Bebas Neue', cursive;
   font-size: 16px;
   padding: 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -550,11 +551,153 @@ footer h2 {
   }
 }
 
-@media only screen and (min-width: 600px) {
-  
+@media only screen and (min-width: 1020px) {
+  #menubar {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 15%;
+  }
+
+  #firstLi {
+    height: 100px
+  }
+
+  .icon-tabler-tools-kitchen, .icon-tabler-user-circle {
+    margin-top: 18px;
+  }
+
+  #lastList {
+    height: 100px
+  }
+
+  .search {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left:0;
+    justify-content: center;
+    background-color: #f2f2f2;
+  }
+
+  #shadow {
+    height: 100px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #desktopGrid {
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: 1fr;
+    background-color: #f2f2f2;
+  }
+
+  .actions1 ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    margin-top: 15%;
+    row-gap: 20px;
+  }
+
+  .actions1 {
+    position: static;
+    background-color: white;
+    border:#EB5428 2px solid;
+  }
+
+  .details {
+    background-color: #0D0D0D;
+    color: #7ABFBF;
+    padding-top: 5px;
+  }
+
+  #detailsFlex {
+    display: flex;
+  }
+
+  #detailsFlex p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0D0D0D;
+    color: #7ABFBF;
+    text-align: center;
+    padding-bottom: 5px;
+    
+  }
+
+  p span {
+    background-color: #0D0D0D;
+    color: #7ABFBF;
+    height: auto;
+  }
+
+  #grid2 {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #sidegrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    background-color: #7ABFBF;
+    padding-bottom: 10px;
+  }
+
+  #sides {
+    padding-top: 15px;
+  }
+
+  .side {
+    grid-template-columns: 1fr 35% 25% 25%;
+    grid-template-rows: 70% 10% 10% 10%;
+    grid-template-areas: 
+      "photo photo photo photo"
+      ". name name name"
+      ". desc desc desc"
+      ". rate stars stars";
+    align-items: center;
+    max-width: 300px;
+    justify-self: center;
+    }
+
+  .gridphoto {
+    justify-self: center;
+    margin: 0;
+    padding: 20px;
+    height: auto;
+    width: auto;
+  }
+
+  .gridname, .griddescription, .gridrating {
+    background-color: transparent;
+  }
+
+  #foottag {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding-left: 10px;
+  }
+
+  #foottag img {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  #foottag p {
+    text-align: left;
+    margin-top: -75px;
+    margin-left: 5px;
+  }
+
+  #footerflex {
+    padding-top: 10px;
+  }
 }
-
-
 
 
 
