@@ -190,7 +190,7 @@ span {
     color: #2d2f31;
 }
 
-.slide li:first-of-type {
+#firstLi {
     background-color: #EB5428;
     position: absolute;
     top: 0;
@@ -199,7 +199,7 @@ span {
     height: 80px;
 }
 
-.slide li:last-of-type {
+#lastList {
     background-color: white;
     position: absolute;
     top: 0;
@@ -365,13 +365,19 @@ ol {
   order: -1;
 }
 
-dd {
+.griddescription {
   font-family: 'Montserrat', sans-serif;
+  background-color: #7ABFBF;
+  text-align: left;
+  padding-left: 0;
 }
 
-dt {
+.gridrating {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  background-color: #7ABFBF;
+  text-align: left;
+  padding-left: 0;
 }
 
 .redstar {
@@ -401,6 +407,151 @@ footer h2 {
   font-family: 'Bebas Neue', cursive;
   font-size: 16px;
   padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    overflow: visible;
+  }
+  .slide {
+    overflow: visible;
+    width: 100%;
+    display: flex;
+  }
+
+  .hide2 {
+    visibility: hidden;
+    height: 0px;
+    display: none;
+  }
+
+  #firstLi {
+    position: absolute;
+    width:15%;
+    left:0;
+    background-color: #EB5428;
+  }
+
+  #lastList {
+    position: absolute;
+    width:15%;
+    right:0;
+    background-color: white;
+  }
+
+  #menubar {
+    position: absolute;
+    top: 80px;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+
+  }
+
+  a img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .listStyle a {
+    flex-direction: column-reverse;
+    color: #EB5428;
+    height: 80px;
+    padding: 0;
+    gap: 0;
+    padding-top: 5.5px;
+    background-color: white;
+  }
+
+  li {
+    background-color: white;
+  }
+
+  .search {
+    width: 70%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 15%;
+    background-color: white;
+    display: flex;
+    justify-content:end;
+  }
+
+  h2 {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+
+  #shadow {
+    height: 180px;
+  }
+
+  main {
+    margin-top: 180px;
+  }
+
+  #tacoPic {
+    top: 285px;
+
+  }
+
+  .actions1 {
+    position: absolute;
+    top:245px;
+    width: 100%;
+  }
+
+  .actions1 ul {
+    background-color: rgba(242, 242, 242, .7);
+  }
+
+  .actions1 ul li{
+    background-color: transparent;
+  }
+
+  h3 ~ p {
+    text-align: center;
+  }
+
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 10fr;
+    grid-auto-flow: column;
+    padding-top: 10px;
+    background-color: #f2f2f2;
+  }  
+
+  #sidegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #sides {
+    padding: 0;
+    text-align: center;
+  }
+
+  #footerflex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+    padding-top: 35px;
+  }
+
+  #foottag {
+    order: -1;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
 }
 
 
