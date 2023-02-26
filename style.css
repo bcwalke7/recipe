@@ -677,6 +677,10 @@ footer h2 {
     background-color: transparent;
   }
 
+  .gridstars {
+    margin-left: -15%;
+  }
+
   #foottag {
     display: grid;
     grid-template-columns: 25% 75%;
