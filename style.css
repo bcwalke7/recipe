@@ -703,5 +703,33 @@ footer h2 {
   }
 }
 
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+  *, body, p, h3, p span, #ingredients, #ingredients li, .list2, .list2 li, footer, #foottag {
+    background-color: white;
+  }
 
+  img, header, .search, #shadow, .actions, article {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #tacoPic {
+    visibility: visible;
+    filter:grayscale(1);
+    position: static;
+    width: 300px;
+    height: auto;
+  }
+  body {
+    position: fixed;
+    top: 0;
+  }
+  h2, h3, h4, p, #ingredients li, ol li, #foottag p{
+    font-family: serif;
+  }
+
+}
 
